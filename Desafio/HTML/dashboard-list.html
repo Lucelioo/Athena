@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athena - Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../CSS/dashboard-list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral com navegação e identidade visual do sistema -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <div class="svg-icon logo">
+                    <img src="../SVG/calendar-clock.svg" alt="Calendar Icon">
+                </div>
+                <h1 class="logo-text">Athena</h1>
+            </div>
+            
+            <!-- Menu de navegação principal do sistema -->
+            <div class="menu-section">
+                <h2 class="menu-title">GERAL</h2>
+                <ul class="menu-items">
+                    <li class="menu-item active">
+                        <div class="svg-icon">
+                            <img src="../SVG/layout-grid.svg" alt="Grid Icon">
+                        </div>
+                        <span>Início</span>
+                    </li>
+                    <li class="menu-item">
+                        <div class="svg-icon">
+                            <img src="../SVG/user.svg" alt="User Icon">
+                        </div>
+                        <span>Perfil</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Área principal do conteúdo -->
+        <main class="main-content">
+            <!-- Cabeçalho com informações do usuário logado -->
+            <header class="header">
+                <div class="header-actions">                    
+                    <div class="user-profile">
+                        <div class="user-info">
+                            <span class="user-name">Lucélio Sousa</span>
+                            <span class="user-email">lucelioprogramador@gmail.com</span>
+                        </div>
+                        <div class="user-avatar">
+                            <span>LS</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <h1 class="page-title">Dashboard</h1>
+
+            <!-- Botão para criação de novos agendamentos -->
+            <div class="create-button-container">
+                <button class="btn-criar">
+                    CRIAR <i class="fas fa-plus"></i>
+                </button>
+            </div>
+            
+            <!-- Campo de busca para filtrar agendamentos existentes -->
+            <div class="search-container-main">
+                <input type="text" placeholder="Buscar por um agendamento" class="search-input">
+            </div>
+
+            <!-- Grade de exibição dos agendamentos do usuário -->
+            <div class="appointments-grid">
+                <!-- Card de agendamento 1 -->
+                <div class="appointment-card">
+                    <div class="card-header">
+                        <div class="card-id">
+                            <span>#7ce10f39</span>
+                            <span class="status-indicator active"></span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-edit">
+                                <div class="btn-edit">
+                                    <img src="../SVG/pencil.svg" alt="Edit Icon">
+                                </div>
+                            </button>
+                            <button class="btn-delete">
+                                <div class="btn-delete">
+                                    <img src="../SVG/trash-2.svg" alt="Delete Icon">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="professor-info">
+                            <span class="label">Professor:</span>
+                            <span class="value">João Batista</span>
+                        </div>
+                        <div class="subject-info">
+                            <span class="subject">TCC</span>
+                        </div>
+                        <p class="description">Falar sobre o tema do meu TCC</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="date-time">• 04 de março, às 10:00.</span>
+                    </div>
+                </div>
+
+                <!-- Card de agendamento 2 -->
+                <div class="appointment-card">
+                    <div class="card-header">
+                        <div class="card-id">
+                            <span>#7ce10f39</span>
+                            <span class="status-indicator inactive"></span>
+                        </div>
+                        <div class="card-actions">
+                            <button class="btn-delete">
+                                <div class="btn-delete">
+                                    <img src="../SVG/trash-2.svg" alt="Delete Icon">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="professor-info">
+                            <span class="label">Professor:</span>
+                            <span class="value">João Batista</span>
+                        </div>
+                        <div class="subject-info">
+                            <span class="subject">TCC</span>
+                        </div>
+                        <p class="description">Falar sobre o tema do meu TCC</p>
+                    </div>
+                    <div class="card-footer">
+                        <span class="date-time">• 02 de março, às 10:00.</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../Javascript/dashboard-list.js"></script>
+</body>
+</html>

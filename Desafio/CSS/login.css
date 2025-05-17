@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+body {
+    background-color: #09090B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.headline {
+    font-size: 92px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.white-text {
+    color: white;
+}
+
+.green-text {
+    color: #2EAA6E;
+}
+
+.period {
+    font-size: 5rem;
+}
+
+.login-form {
+    flex: 0 0 380px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+input:focus {
+    outline: none;
+    background-color: #333;
+}
+
+.signup-link {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.signup-link a {
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.pointer-emoji {
+    font-size: 14px;
+    position: relative;
+    top: -2px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 15px;
+    background-color: #2EAA6E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #249660;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .headline {
+        font-size: 3.5rem;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+}
