@@ -14,17 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Aqui você adicionaria a lógica de registro/cadastro
         console.log('Tentativa de cadastro:', {
             email,
             nome,
             senha
         });
         
-        // Simulação de cadastro bem-sucedido
         alert('Cadastro realizado com sucesso!');
         
-        // Redirecionar para a página de login após o cadastro
         window.location.href = 'login.html';
     });
 });

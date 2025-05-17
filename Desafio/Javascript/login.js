@@ -4,13 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const email = document.getElementById('email').value;
         const senha = document.getElementById('senha').value;
         
-        // Aqui você adicionaria a lógica de autenticação
         console.log('Tentativa de login com:', email);
         
-        // Simulação de um login bem-sucedido
         alert('Login efetuado com sucesso!');
         
-        // Redirecionar para o dashboard após o login bem-sucedido
         window.location.href = 'dashboard-list.html';
     });
 });
